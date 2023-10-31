@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [package]
 name = "hello_cargo"
 version = "0.1.0"
@@ -7,13 +6,3 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-=======
-[package]
-name = "hello_cargo"
-version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
->>>>>>> def5ed8c33e35007c31adda8c594035b2256c8a4
