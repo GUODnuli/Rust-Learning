@@ -1,3 +1,4 @@
+use std::io
 #![allow(unused)]
 fn if_fn() {
     let condition: bool = true;
@@ -68,8 +69,18 @@ fn f2c(value: f64, model: u8) -> f64 {
     }
 }
 
-fn fibonacci(number: i8) {
-    for 
+fn fibonacci(number: i8) -> {
+    if number <= 1 {
+        return number
+    }
+
+    let mut previous = 0;
+    let mut current = 1;
+    for i in (2..number) {
+        let next = previous + current;
+        previous = current;
+        current = next;
+    }
 }
 
 fn main() {
@@ -79,4 +90,5 @@ fn main() {
 
     println!("{}°C is {}°F", temperature, f2c(temperature, 0));
     println!("{}°F is {}°C", temperature_f, f2c(temperature_f, 1));
+    println!("The {}th Fibonacci number is:\n{}", number, fibonacci(number));
 }
