@@ -12,6 +12,19 @@ fn main() {
     println!("{}", s2);
     let s3 = takes_and_gives_back(s2);
     println!("{}", s3);
+
+    let mut s1 = String::from("hello");
+
+    let len = calculate_length(&s1);
+
+    println!("The length of '{}' is {}.", s1, len);
+
+    change(&mut s1);
+
+    let r1 = &mut s1;
+    let r2 = &mut s1;
+
+    println!("{}, {}", r1, r2);
 }
 
 fn takes_ownership(some_string: String) {
@@ -30,4 +43,12 @@ fn gives_ownership() -> String {
 
 fn takes_and_gives_back(a_string: String) -> String {
     a_string
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world!");
 }

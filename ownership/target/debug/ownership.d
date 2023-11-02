@@ -1,1 +1,1 @@
-/home/zhuangxiaosen/Rust-Learning/ownership/target/debug/ownership: /home/zhuangxiaosen/Rust-Learning/ownership/src/main.rs
+/home/zhuangxiaosen/projects/ownership/target/debug/ownership: /home/zhuangxiaosen/projects/ownership/src/main.rs
