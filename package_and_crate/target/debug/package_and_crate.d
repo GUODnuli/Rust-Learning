@@ -1,1 +1,1 @@
-/home/zhuangxiaosen/Rust-Learning/package_and_crate/target/debug/package_and_crate: /home/zhuangxiaosen/Rust-Learning/package_and_crate/src/lib.rs /home/zhuangxiaosen/Rust-Learning/package_and_crate/src/main.rs
+/home/zhuangxiaosen/projects/package_and_crate/target/debug/package_and_crate: /home/zhuangxiaosen/projects/package_and_crate/src/front_of_house.rs /home/zhuangxiaosen/projects/package_and_crate/src/lib.rs /home/zhuangxiaosen/projects/package_and_crate/src/main.rs
