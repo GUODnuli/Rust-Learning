@@ -1,0 +1,1 @@
+/home/zhuangxiaosen/Rust-Learning/package_and_crate/target/debug/package_and_crate: /home/zhuangxiaosen/Rust-Learning/package_and_crate/src/lib.rs /home/zhuangxiaosen/Rust-Learning/package_and_crate/src/main.rs
