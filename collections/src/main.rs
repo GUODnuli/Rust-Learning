@@ -1,5 +1,5 @@
 #![allow(unused)]
-#[derive(Debug)]
+
 fn main() {
     let v: Vec<i32> = Vec::new();
 
@@ -10,5 +10,13 @@ fn main() {
     v.push(7);
     v.push(8);
 
-    println!("The vector is: {}", v);
+    println!("The vector is: {:?}", v);
+
+    let third: &i32 = &v[2];
+    println!("The third element is {}", third);
+
+    match v.get(2) {
+        Some(third) => println!("The third element is {}", third),
+        None => println!("There is no third element."),
+    }
 }
