@@ -22,9 +22,10 @@ fn main() {
     change(&mut s1);
 
     let r1 = &mut s1;
-    let r2 = &mut s1;
+    // 解开下面两行的注释会导致报错
+    // let r2 = &mut s1;
 
-    println!("{}, {}", r1, r2);
+    // println!("{}, {}", r1, r2);
 }
 
 fn takes_ownership(some_string: String) {
