@@ -18,7 +18,7 @@ fn main() {
             break;
         }
 
-        if re_Vowel.is_match(input) {
+        if re_vowel.is_match(input) {
             println!("The Pig-Latin is {}-hay", input);
         } else {
             let first_char = input.chars().next().unwrap();
