@@ -57,7 +57,7 @@ fn get_employee(input: &str, starff_map: &mut HashMap<String, String>) {
             let department = caps.get(1).unwrap().as_str().to_string();
 
             for (key, value) in starff_map.iter().filter(|&(_, v)| v == &department) {
-                println!("{} in {}", key, &department);
+                println!("{} in {}", key, value);
             }
         },
         None => println!("Syntax error.\nPlease input like \"Get <department>\"."),
