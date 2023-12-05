@@ -7,8 +7,8 @@ pub enum List {
 
 pub struct MyBox<T>(T);
 
-pub impl<T> MyBox<T> {
-    fn new(x: T) -> MyBox<T> {
+impl<T> MyBox<T> {
+    pub fn new(x: T) -> MyBox<T> {
         MyBox(x)
     }
 }
