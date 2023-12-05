@@ -7,8 +7,8 @@ pub enum List {
 
 pub struct MyBox<T>(T);
 
-pub impl<T> MyBox<T> {
-    fn new(x: T) -> MyBox<T> {
+impl<T> MyBox<T> {
+    pub fn new(x: T) -> MyBox<T> {
         MyBox(x)
     }
 }
@@ -18,5 +18,16 @@ impl<T> Deref for MyBox<T> {
 
     fn deref(&self) -> &T {
         &self.0
+    }
+}
+
+// =========== Drop trait ============ //
+pub struct CustomSmartPointer {
+    pub data: String,
+}
+
+impl Drop for CustomSmartPointer {
+    fn drop(&mut self) {
+        println!("Dropping CustomSmartPointer with data `{}`!", self.data);
     }
 }
