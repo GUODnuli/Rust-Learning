@@ -1,5 +1,6 @@
 // 15.1 使用Box<T>指向堆上的数据
 // use pointer_learn::List::{Cons, Nil};
+#![allow(unused)]
 use pointer_learn::{ MyBox, CustomSmartPointer };
 
 fn main() {
