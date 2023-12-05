@@ -20,3 +20,14 @@ impl<T> Deref for MyBox<T> {
         &self.0
     }
 }
+
+// =========== Drop trait ============ //
+pub struct CustomSmartPointer {
+    pub data: String,
+}
+
+impl Drop for CustomSmartPointer {
+    fn drop(&mut self) {
+        println!("Dropping CustomSmartPointer with data `{}`!", self.data);
+    }
+}
