@@ -32,4 +32,14 @@ fn main() {
     for (index, value) in v.iter().enumerate() {
         println!("{} is at index {}", value, index);
     }
+
+    // Cann't complie
+    // let some_option_value = Option::Some(String::new());
+
+    // let some(x) = some_option_value;
+
+    // Will get a warning
+    // if let x = 5 {
+    //     println!("{}", x);
+    // };
 }
