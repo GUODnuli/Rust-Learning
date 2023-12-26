@@ -1,3 +1,4 @@
+#![allow(unused)]
 use std::ops::Add;
 use std::fmt;
 
@@ -92,6 +93,26 @@ trait OutlinePrint: fmt::Display {
     }
 }
 
+// ==================================================== //
+
+impl fmt::Display for Point {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "({}, {})", self.x, self.y)
+    }
+}
+
+impl OutlinePrint for Point {}
+
+// ==================================================== //
+
+struct Wrapper(Vec<String>);
+
+impl fmt::Display for Wrapper {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "[{}]", self.0.join(", "))
+    }
+}
+
 fn main() {
     assert_eq!(Point { x: 1, y: 0 } + Point { x: 2, y: 3 },
         Point { x: 3, y: 3 });
@@ -106,4 +127,14 @@ fn main() {
 // ==================================================== //
     
     println!("A baby dog is colled a {}", <Dog as Animal>::baby_name());
+
+// ==================================================== //
+
+    let point1 = Point {x: 1, y: 2};
+    point1.outline_print();
+
+// ==================================================== //
+
+    let w = Wrapper(vec![String::from("Hello"), String::from("world")]);
+    println!("w = {}", w);
 }
