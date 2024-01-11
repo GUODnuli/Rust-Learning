@@ -1,4 +1,3 @@
-#![allow(unused)]
 use std::{net::{TcpListener, TcpStream}, fs};
 use std::io::prelude::*;
 use std::thread;
